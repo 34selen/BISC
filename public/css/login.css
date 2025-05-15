@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: 'TheJamsil5Bold';
+}
+
+p {
+    font-family: 'SUITE-Regular';
+}
+
+.main {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.btn_class {
+    text-align: center;
+}
+
+.auth_btn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3%;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: blue;
+    border: none;
+    color: wheat;
+}
+
+.login {
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    width: 40rem;
+    height: 25rem;
+    border : 2px solid black;
+    border-radius: 2rem;
+}
+
+.login h2 {
+    padding: 1rem;
+}
+
+.login .sign_desc {
+    font-size: 14px;
+    color: rgb(82, 77, 77);
+}
+
+.login {
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.login .fail_msg {
+    margin-top: 1rem;
+    font-size: 15px;
+    color: red;
+    font-weight: 900;
+}
+
+.auth_btn:hover {
+    animation-name: btn_animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn_animation {
+    20% {
+        background-color: blueviolet;
+        color: aquamarine;
+    }
+    50% {
+        background-color: blueviolet;
+        color: aquamarine;
+
+    }
+    100% {
+        background-color: blueviolet;
+        color: aquamarine;
+    }
+}

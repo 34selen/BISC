@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISC COMPONY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/users.css">
+</head>
+<body>
+    <div class="nav_container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-weight:800">BISC COMPONY EMPLOYEE SYSTEM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">직원 채팅</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">로그 확인</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/user">직원 확인</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/admin">자료 다운로드</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" id="navbar-text">
+                    <a href="/auth/login" style="text-decoration: none;"><button type="button" class="btn btn-outline-primary">시스템 로그인</button></a>
+                    <a href="/auth/signup" style="text-decoration: none;"><button type="button" class="btn btn-outline-primary">시스템 회원가입</button></a>
+                </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="users-box">
+        <div class="d-flex" role="search" id="search">
+            <input id="search-text" class="form-control me-2" type="search" placeholder="특정 직원ID를 검색하세요 ..." aria-label="Sarch">
+            <button class="btn btn-outline-success" type="submit" id="search-btn" type="button">Search</button>
+        </div>
+        <div class="users-list">
+            <table class="table caption-top" id="users_list">
+                <caption>현재 등록되어 있는 직원 목록</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">직원ID</th>
+                    <th scope="col">이메일</th>
+                    <th scope="col">접근권한</th>
+                  </tr>
+                </thead>
+                <tbody id="append-user">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/static/js/users.js" type="module"></script>
+    <script src="/static/js/modules/auth_check.module.js" type="module"></script>
+</body>
+</html>

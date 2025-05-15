@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    margin-top: 10rem;
+    text-align: center;
+  }
+  .title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .input-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 40rem;
+    text-align: center;
+    font-size: 18px;
+  }
+  button {
+    margin-top: 3rem;
+    width: 30vw;
+    height: 5vh;
+    font-weight: 900;
+    font-size: 16px;
+    border: 1px solid rgb(180, 180, 219);
+    background-color: antiquewhite;
+    border-radius: 3%;
+  }
+  button:hover {
+    background-color: aqua;
+  }
