@@ -32,6 +32,6 @@ services:
     environment:
       MYSQL_DATABASE: bisc
       MYSQL_USER: challange
-      MYSQL_PASSWORD: [*SECRET*]
-      MYSQL_ROOT_PASSWORD: [*SECRET*]
+      MYSQL_PASSWORD: "aa"
+      MYSQL_ROOT_PASSWORD: "bb"
     
