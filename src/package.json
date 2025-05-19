@@ -17,7 +17,7 @@
     "glob": "10.3.10",
     "jsonwebtoken": "9.0.2",
     "morgan": "1.10.0",
-    "mysql2": "3.6.2",
+    "mysql2": "3.14.1",
     "path": "0.12.7",
     "sequelize": "6.19.0",
     "socket.io": "4.7.2",
